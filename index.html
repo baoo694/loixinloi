@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gửi đến người yêu của anh</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background Images Grid -->
+    <div class="background-grid" id="backgroundGrid">
+      <!-- Images will be added dynamically via JavaScript -->
+    </div>
+
+    <audio id="bgMusic" loop preload="auto">
+      <source src="music/background-music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Music Play Button Overlay -->
+    <div id="musicOverlay" class="music-overlay">
+      <div class="music-content">
+        <h2>Nhấn để bắt đầu</h2>
+        <button id="startButton" class="start-btn">
+          <span class="music-icon">🎵</span>
+          Bắt đầu
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slideshow Image -->
+    <img
+      id="mobileBgImage"
+      class="mobile-bg-image"
+      src=""
+      alt="Ảnh kỷ niệm"
+      style="display: none"
+    />
+
+    <div class="container">
+      <div class="card" id="question-card">
+        <h1>Hôm nay em thế nào?</h1>
+        <div class="buttons">
+          <button onclick="showNextCard('happy')" class="btn happy-btn">
+            😊 Vui
+          </button>
+          <button onclick="showNextCard('sad')" class="btn sad-btn">
+            😢 Buồn
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
